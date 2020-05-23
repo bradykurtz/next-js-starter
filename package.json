@@ -1,0 +1,16 @@
+{
+  "name": "bradykurtz-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node src/server/index.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node src/server/index.js"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "next": "9.3.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
