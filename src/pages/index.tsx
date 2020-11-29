@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import React, { FunctionComponent } from 'react';
 
-export default function Home() {
+
+const Home = () => {
   return (
     <div className="container">
       <Head>
@@ -207,3 +209,11 @@ export default function Home() {
     </div>
   )
 }
+
+const MyCustomLayout: FunctionComponent = ({ children }) => (<div className="my-custom-layout2"> { children } </div>)
+
+Home.layoutProps = {
+  Layout: MyCustomLayout  
+}
+
+export default Home
